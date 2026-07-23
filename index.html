@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金庫残高計算</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>💰 金庫残高計算</h1>
+
+    <p id="datetime"></p>
+
+    <h2>紙幣</h2>
+
+    <table>
+        <tr>
+            <th>金種</th>
+            <th>枚数</th>
+            <th>金額</th>
+        </tr>
+
+        <tr>
+            <td>10,000円</td>
+            <td><input type="number" id="bill10000" min="0"></td>
+            <td id="sum10000">0円</td>
+        </tr>
+
+        <tr>
+            <td>5,000円</td>
+            <td><input type="number" id="bill5000" min="0"></td>
+            <td id="sum5000">0円</td>
+        </tr>
+
+        <tr>
+            <td>2,000円</td>
+            <td><input type="number" id="bill2000" min="0"></td>
+            <td id="sum2000">0円</td>
+        </tr>
+
+        <tr>
+            <td>1,000円</td>
+            <td><input type="number" id="bill1000" min="0"></td>
+            <td id="sum1000">0円</td>
+        </tr>
+
+    </table>
+
+    <h2>硬貨</h2>
+
+    <table>
+
+        <tr>
+            <th>金種</th>
+            <th>棒金</th>
+            <th>バラ</th>
+            <th>金額</th>
+        </tr>
+
+        <tr>
+            <td>500円</td>
+            <td><input type="number" id="roll500" min="0"></td>
+            <td><input type="number" id="coin500" min="0"></td>
+            <td id="total500">0円</td>
+        </tr>
+
+        <tr>
+            <td>100円</td>
+            <td><input type="number" id="roll100" min="0"></td>
+            <td><input type="number" id="coin100" min="0"></td>
+            <td id="total100">0円</td>
+        </tr>
+
+        <tr>
+            <td>50円</td>
+            <td><input type="number" id="roll50" min="0"></td>
+            <td><input type="number" id="coin50" min="0"></td>
+            <td id="total50">0円</td>
+        </tr>
+
+        <tr>
+            <td>10円</td>
+            <td><input type="number" id="roll10" min="0"></td>
+            <td><input type="number" id="coin10" min="0"></td>
+            <td id="total10">0円</td>
+        </tr>
+
+        <tr>
+            <td>5円</td>
+            <td><input type="number" id="roll5" min="0"></td>
+            <td><input type="number" id="coin5" min="0"></td>
+            <td id="total5">0円</td>
+        </tr>
+
+        <tr>
+            <td>1円</td>
+            <td><input type="number" id="roll1" min="0"></td>
+            <td><input type="number" id="coin1" min="0"></td>
+            <td id="total1">0円</td>
+        </tr>
+
+    </table>
+
+    <h2>自由入力バラ金額</h2>
+
+    <input type="number" id="freeMoney" min="0" placeholder="金額を入力">
+
+    <h2>総合計</h2>
+
+    <div class="total">
+        ￥<span id="grandTotal">0</span>
+    </div>
+
+    <br>
+
+    <button id="saveButton">保存</button>
+    <button id="historyButton">履歴</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
